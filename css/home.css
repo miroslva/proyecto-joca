@@ -1,0 +1,246 @@
+:root{
+    --rosa:#ff00bb;
+    --rosita:#fff8f8;
+    --morado:#c371f2;
+    --blanco:#ffffff;
+}
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+html{
+font-size: 62.5%;
+box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Google Sans',sans-serif;
+    background: var(--rosita);
+}
+
+    header{
+      background:linear-gradient(135deg,#c371f2,#ff00bb);
+      padding:2rem 4rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color: var(--blanco);
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:1.5rem;
+    }
+
+    .logo img{
+      width:8rem;
+      height:8rem;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid var(--blanco);
+    }
+
+    .logo h1{
+      font-size:3.2rem;
+    }
+
+    nav a{
+      text-decoration:none;
+      color: var(--blanco);
+      margin-left:2.5rem;
+      font-size: 2.2rem;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color: var(--rosita);
+    }
+
+    .hero{
+      height:80vh;
+      background:url('https://asset.bloomnation.com/c_fill,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,h_2000,q_auto,w_2000/v1754230462/vendor/9675/catalog/product/2/0/20240405010740_file_660f4edc3bd01_660f50d2edf05.jpg') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color: var(--blanco);
+      padding:2rem;
+    }
+
+    .hero-text{
+      background:rgba(0,0,0,0.45);
+      padding:4rem;
+      border-radius:2rem;
+    }
+
+    .hero h2{
+      font-size:5.5rem;
+      margin-bottom:1.5rem;
+    }
+
+    .hero p{
+      font-size:2.2rem;
+      margin-bottom:2.5rem;
+    }
+
+    .btn{
+      display:inline-block;
+      background: var(--rosa);
+      color: var(--blanco);
+      padding:1.4rem 2.8rem;
+      border-radius:3rem;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background: var(--rosa);
+      transform:scale(1.05);
+    }
+
+
+    .productos{
+      padding:7rem 5rem;
+      text-align:center;
+    }
+
+    .productos h2{
+      font-size:4.2rem;
+      color: var(--rosa);
+      margin-bottom:40px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:3rem;
+    }
+
+    .card{
+      background: var(--blanco);
+      border-radius:2rem;
+      overflow:hidden;
+      box-shadow:0 o.5rem 1.5rem rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-1rem);
+    }
+
+    .card img{
+      width:100%;
+      height:25rem;
+      object-fit:cover;
+    }
+
+    .contenido{
+      padding:2rem;
+    }
+
+    .contenido h3{
+      color: var(--rosa);
+      margin-bottom:1rem;
+    }
+
+    .precio{
+      font-size:2.2rem;
+      font-weight:bold;
+      margin:1.5rem 0;
+    }
+
+    
+footer{
+    margin-top: 6rem;
+
+    background: linear-gradient(to right,#c371f2,#ff00bb);
+
+    color: var(--blanco);
+}
+
+.footer-contenido{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 5rem;
+}
+
+.footer-box{
+    width: 30rem;
+}
+
+.footer-box h3{
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+}
+
+.footer-box p{
+    margin-bottom: 1.5rem;
+}
+
+.footer-box a{
+    display: block;
+
+    color: var(--blanco);
+    text-decoration: none;
+
+    margin-bottom: 1.5rem;
+}
+
+.copy{
+    text-align: center;
+
+    padding: 2rem;
+
+    background: rgba(0,0,0,0.1);
+}
+
+    @media(max-width:900px){
+
+      .grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      header{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+      }
+
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      nav a{
+        margin:1rem;
+      }
+
+      .hero h2{
+        font-size:3.8rem;
+      }
+
+      .hero p{
+        font-size:1.8rem;
+      }
+
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+    }
